@@ -1,0 +1,404 @@
+<nav class="navbar navbar-expand-lg navbar-white border-top border-bottom p-0 main-nav">
+    <div class="container px-lg-0">
+        <div class="row align-items-center">
+            <a class=" col col-auto navbar-brand py-3 ps-3 ps-lg-2 d-none d-md-block" href="{% url 'home' %}">
+                <img width="300" height="57" alt="Moving With Status Unlimited Logo" style="width: 200px; height: 38px;" class="img-fluid" src="../_static/svg/shared/logos/hireahelper-logo-2color58a6.svg" loading="lazy" />
+            </a>
+
+            
+            <div class="col-auto d-md-none">
+                <a class="navbar-brand py-3 me-0 me-lg-3 d-block" href="{% url 'home' %}">
+                    <img width="32" height="32" alt="Moving With Status Unlimited Logo" style="width: 32px; height: 32px;" class="img-fluid" src="../_static/svg/shared/logos/hireahelper-symbol-logo-greene4af.svg" loading="lazy" />
+                </a>
+            </div>
+
+        </div>
+     
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hahMainNav" aria-controls="hahMainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><span></span><span></span><span></span><span></span></span>
+        </button>
+        
+        <div class="navbar-collapse collapse" id="hahMainNav">
+            <ul class="nav navbar-nav list-unstyled flex-grow-1 flex-nowrap flex-lg-wrap">
+                <li class="dropdown menu-large nav-item pt-0 d-lg-none d-flex">
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#ctaModalMainNav" class="bg-primary nav-link text-white fw-bold py-3 px-3 flex-grow-1">Find Movers Near Me</a>
+                </li>
+                <li class="drilldown-menu dropdown menu-large nav-item pt-0 border-bottom border-lg-0">
+                    <a id="bookMenuToggle" href="javascript:void(0);" class="dropdown-toggle nav-link text-base pt-4 pb-3 fw-bold px-3 collapsed" data-bs-toggle="collapse" data-bs-target="#bookMenu" aria-haspopup="true" aria-expanded="false">Book <i class="far fa-plus float-end py-1 d-lg-none"></i></a>
+                    <div id="bookMenu" class="dropdown-menu megamenu bg-base-dark-10 border-bottom list-unstyled rounded-0" aria-labelledby="bookMenuToggle" data-parent="#hahMainNav">
+
+                        <div class="container">
+                            <div class="row flex-grow-1">
+                                <div class="col-lg">
+                                    <ul class="nav flex-column mb-0">
+
+                                        <li class="nav-item mb-0 mb-lg-2">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Book-Click" data-galbl="Move-Help" class="nav-link" href="{% url 'move-help' %}"><span class="h5 text-white">Move Help</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Book-Click" data-galbl="Packing" class="nav-link move-help-links ps-4 ps-lg-2" href="{% url 'packing' %}">Packing</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Book-Click" data-galbl="Loading" class="nav-link move-help-links ps-4 ps-lg-2" href="{% url 'loading' %}">Loading</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Book-Click" data-galbl="Unloading" class="nav-link move-help-links ps-4 ps-lg-2" href="{% url 'unloading' %}">Unloading</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Book-Click" data-galbl="Furniture-movers" class="nav-link move-help-links ps-4 ps-lg-2" href="{% url 'furniture' %}">Furniture Movers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Book-Click" data-galbl="Day-labor" class="nav-link move-help-links ps-4 ps-lg-2" href="{% url 'day-labor' %}">Day Labor</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg">
+                                    <ul class="nav flex-column mb-0">
+                                        <li class="nav-item mb-0 mb-lg-2">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Book-Click" data-galbl="Movers" class="nav-link" href="#"><span class="h5 text-white">Movers</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Book-Click" data-galbl="Moving-companies" class="nav-link move-help-links ps-4 ps-lg-2" href="#">Moving Companies</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Book-Click" data-galbl="Long-distance-moving-companies" class="nav-link move-help-links ps-4 ps-lg-2" href="#">Long Distance Moving Companies</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg">
+                                    <ul class="nav flex-column mb-0">
+
+                                        <li class="nav-item mb-0 mb-lg-2">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Book-Click" data-galbl="Rental-trucks" class="nav-link" href="{% url 'rental-truck' %}"><span class="h5 text-white">Rental Truck</span></a>
+                                        </li>
+                                        <li class="nav-item mb-0 mb-lg-2">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Book-Click" data-galbl="Moving-containers" class="nav-link" href="{% url 'moving-containers' %}"><span class="h5 text-white">Moving Containers</span></a>
+                                        </li>
+                                        <li class="nav-item mb-0 mb-lg-2">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Book-Click" data-galbl="Freight-trailers" class="nav-link" href="{% url 'semi-freight-trailer' %}"><span class="h5 text-white">Semi-Freight Trailer</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg d-none d-lg-flex">
+
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item py-2 h5 text-white mb-2">
+                                            <span>Why Book with Moving With Status Unlimited?</span>
+                                        </li>
+                                        <li class="nav-item py-2 text-white mb-2">
+                                            <span><i class="fal fa-shield-check pe-2"></i>Money-back service guarantee</span>
+                                        </li>
+                                        <li class="nav-item py-2 text-white mb-2">
+                                            <span><i class="fal fa-clock pe-2"></i>Free cancellation w/ 24 hour notice</span>
+                                        </li>
+                                        <li class="nav-item py-2 text-white mb-2">
+                                            <span><i class="fal fa-headset pe-2"></i>7 days a week customer support</span>
+                                        </li>
+                                        <li class="nav-item py-2 text-white mb-2">
+                                            <span><i class="fal fa-check-square pe-2"></i>Instant quoting &amp; online booking</span>
+                                        </li>
+                                        <li class="nav-item py-2 text-white mb-2">
+                                            <span><i class="fal fa-home pe-2"></i>707,659+ households moved</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="drilldown-menu dropdown menu-large nav-item pt-0 border-bottom border-lg-0">
+                    <a id="planMenuToggle" href="javascript:void(0);" class="dropdown-toggle nav-link text-base pt-4 pb-3 fw-bold px-3 collapsed" data-bs-toggle="collapse" data-bs-target="#planMenu" aria-haspopup="true" aria-expanded="false">Plan<i class="far fa-plus float-end py-1 d-lg-none"></i></a>
+                    <div id="planMenu" class="dropdown-menu megamenu bg-base-dark-10 border-bottom list-unstyled rounded-0" aria-labelledby="planMenuToggle" data-parent="#hahMainNav">
+
+                        <div class="container">
+                            <div class="row flex-grow-1">
+                                <div class="col-lg">
+                                    <ul class="nav flex-column mb-0">
+                                        <li class="nav-item mb-0 mb-lg-2">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Moving-costs" class="nav-link" href="#"><span class="h5 text-white">Moving Costs</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Cost-calculator" class="nav-link moving-costs-links ps-4 ps-lg-2" href="#">Cost Calculator</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Moving-options" class="nav-link moving-costs-links ps-4 ps-lg-2" href="#">Moving Options</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Packing-supplies" class="nav-link moving-costs-links ps-4 ps-lg-2" href="#">Packing Supplies</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Moving-containers" class="nav-link moving-costs-links ps-4 ps-lg-2" href="#">Moving Containers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Moving-trucks" class="nav-link moving-costs-links ps-4 ps-lg-2" href="#">Moving Trucks</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Hybrid-move" class="nav-link moving-costs-links ps-4 ps-lg-2" href="#">Hybrid Move Cost Savings</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Uhaul-cost" class="nav-link moving-costs-links ps-4 ps-lg-2" href="#">How Much Does It Cost to Rent a U-Haul?</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg">
+                                    <ul class="nav flex-column mb-0">
+                                        <li class="nav-item mb-0 mb-lg-2">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Moving-guides" class="nav-link" href="#"><span class="h5 text-white">Moving Guides</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Moving-checklist" class="nav-link moving-guides-links ps-4 ps-lg-2" href="#">Moving Checklist</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Loading-unloading" class="nav-link moving-guides-links ps-4 ps-lg-2" href="#/">Loading &amp; Unloading</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Pets-kids" class="nav-link moving-guides-links ps-4 ps-lg-2" href="#">Pets &amp; Kids</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Plan-long-distance" class="nav-link moving-guides-links ps-4 ps-lg-2" href="#">Long Distance Moving</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Planning-organizing" class="nav-link moving-guides-links ps-4 ps-lg-2" href="#">Planning &amp; Organizing</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Moving-insurance" class="nav-link moving-guides-links ps-4 ps-lg-2" href="#">Moving Insurance</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg">
+                                    <ul class="nav flex-column mb-0">
+                                        <li class="nav-item mb-0 mb-lg-2">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Moving-journeys" class="nav-link" href="{% url 'moving' %}"><span class="h5 text-white">Moving Journeys</span></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Military-move" class="nav-link moving-guides-links ps-4 ps-lg-2" href="{% url 'military-move' %}>Military Move</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Office-movers" class="nav-link moving-guides-links ps-4 ps-lg-2" href="{% url 'office-movers' %}">Office Movers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="Corporate-relocation" class="nav-link moving-guides-links ps-4 ps-lg-2" href="{% url 'corporate-relocation' %}">Corporate Relocation</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg">
+                                    <a data-gacat="HAH.com-Global-Nav" data-gaact="Plan-Click" data-galbl="How-to-pack" class="nav-link" href="#">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item mb-2">
+                                                <span class="h5 text-white">How to Pack</span>
+                                            </li>
+                                            <li class="nav-item d-none d-lg-inline-block">
+                                                <img width="480" height="350" alt="Hand packing boxes" class="mb-3 img-fluid img-how-to-pack d-none d-lg-inline-block" src="../_static/img/public/how-to-pack4ee2.jpg" loading="lazy" />
+
+                                                <p class="text-white font-weight-normal">
+                                                    There are a million things in the world and just as many ways to pack them.
+                                                </p>
+                                                <div class="text-white font-weight-normal">Learn from the experts <i class="far fa-chevron-right ps-1"></i></div>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="drilldown-menu dropdown menu-large nav-item pt-0 border-bottom border-lg-0">
+                    <a id="citiesMenuToggle" href="javascript:void(0);" class="dropdown-toggle nav-link text-base pt-4 pb-3 fw-bold px-3 collapsed" data-bs-toggle="collapse" data-bs-target="#citiesMenu" aria-haspopup="true" aria-expanded="false">Cities<i class="far fa-plus float-end py-1 d-lg-none"></i></a>
+                    <div id="citiesMenu" class="dropdown-menu megamenu bg-base-dark-10 border-bottom list-unstyled rounded-0" aria-labelledby="citiesMenuToggle" data-parent="#hahMainNav">
+
+                        <div class="container">
+                            <div class="row flex-grow-1">
+                                <div class="col-lg-3">
+                                    <ul class="nav flex-column mb-0">
+                                        <li class="nav-item h5 text-white mb-2 d-none d-lg-inline-block">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Cities-Click" data-galbl="Movers-near-me" class="nav-link" href="#">Movers Near Me</a>
+                                        </li>
+                                        <li class="nav-item p-2 text-white d-none d-lg-inline-block">
+                                            <p class="mb-0">No, Seriously. We've Got Movers in All 50 States.</p>
+                                        </li>
+                                        <li class="nav-item py-2 text-white">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="Cities-Click" data-galbl="See-all-cities" class="nav-link" href="#">See All Cities <i class="far fa-chevron-right float-end py-1"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg">
+                                    <a data-gacat="HAH.com-Global-Nav" data-gaact="Cities-Click" data-galbl="NYC" class="nav-link" href="#">
+                                        <div class="card border-0">
+                                            <img width="150" height="150" alt="New York City Icon" class="bg-base-dark-10 city-icon d-none d-lg-inline-block" src="../_static/svg/public/nav-city-icons/newyork2a20.svg" loading="lazy" />
+                                            <div class="card-body bg-base-dark-10 px-0 py-2 text-lg-center">
+                                                <p class="card-text text-white">New York Movers<i class="far fa-chevron-right float-end py-1 d-lg-none"></i></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg">
+                                    <a data-gacat="HAH.com-Global-Nav" data-gaact="Cities-Click" data-galbl="LA" class="nav-link" href="#">
+                                        <div class="card border-0">
+                                            <img width="150" height="150" alt="Los Angeles City Icon" class="bg-base-dark-10 city-icon d-none d-lg-inline-block" src="../_static/svg/public/nav-city-icons/losangelese781.svg" loading="lazy" />
+                                            <div class="card-body bg-base-dark-10 px-0 py-2 text-lg-center">
+                                                <p class="card-text text-white">Los Angeles Movers<i class="far fa-chevron-right float-end py-1 d-lg-none"></i></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg">
+                                    <a data-gacat="HAH.com-Global-Nav" data-gaact="Cities-Click" data-galbl="Chicago" class="nav-link" href="#">
+                                        <div class="card border-0">
+                                            <img width="150" height="150" alt="Chicago City Icon" class="bg-base-dark-10 city-icon d-none d-lg-inline-block" src="../_static/svg/public/nav-city-icons/chicago93f3.svg" loading="lazy" />
+                                            <div class="card-body bg-base-dark-10 px-0 py-2 text-lg-center">
+                                                <p class="card-text text-white">Chicago Movers<i class="far fa-chevron-right float-end py-1 d-lg-none"></i></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg">
+                                    <a data-gacat="HAH.com-Global-Nav" data-gaact="Cities-Click" data-galbl="DC" class="nav-link" href="#">
+                                        <div class="card border-0">
+                                            <img width="150" height="150" alt="Washington DC City Icon" class="bg-base-dark-10 city-icon d-none d-lg-inline-block" src="../_static/svg/public/nav-city-icons/dc748d.svg" loading="lazy" />
+                                            <div class="card-body bg-base-dark-10 px-0 py-2 text-lg-center">
+                                                <p class="card-text text-white">Washington D.C. Movers<i class="far fa-chevron-right float-end py-1 d-lg-none"></i></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg">
+                                    <a data-gacat="HAH.com-Global-Nav" data-gaact="Cities-Click" data-galbl="Atlanta" class="nav-link" href="#">
+                                        <div class="card border-0">
+                                            <img width="150" height="150" alt="Atlanta GA City Icon" class="bg-base-dark-10 city-icon d-none d-lg-inline-block" src="../_static/svg/public/nav-city-icons/atlantaab23.svg" loading="lazy" />
+                                            <div class="card-body bg-base-dark-10 px-0 py-2 text-lg-center">
+                                                <p class="card-text text-white">Atlanta Movers<i class="far fa-chevron-right float-end py-1 d-lg-none"></i></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="drilldown-menu dropdown menu-large nav-item pt-0 border-bottom border-lg-0">
+                    <a id="moreMenuToggle" href="javascript:void(0);" class="dropdown-toggle nav-link text-base pt-4 pb-3 fw-bold px-3 collapsed" data-bs-toggle="collapse" data-bs-target="#moreMenu" aria-haspopup="true" aria-expanded="false">More<i class="far fa-plus float-end py-1 d-lg-none"></i></a>
+                    <div id="moreMenu" class="dropdown-menu megamenu bg-base-dark-10 border-bottom list-unstyled rounded-0" aria-labelledby="moreMenuToggle" data-parent="#hahMainNav">
+
+                        <div class="container">
+                            <div class="row flex-grow-1">
+                                <div class="col-lg">
+                                    <ul class="nav flex-column mb-0">
+                                        <li class="nav-item text-white py-2">
+                                            <span class="h5 py-2 px-md-2">Help &amp; Support</span>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="FAQ" class="nav-link help-support-links ps-4 ps-lg-2" href="{% url 'faq' %}">FAQ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="Moving-day" class="nav-link help-support-links ps-4 ps-lg-2" href="{% url 'moving-day' %}">Moving Day</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="Contact-us" class="nav-link help-support-links ps-4 ps-lg-2" href="{% url 'contact' %}">Contact Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="About-us" class="nav-link help-support-links ps-4 ps-lg-2" href="{% url 'about' %}">About Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg">
+                                    <ul class="nav flex-column mb-0">
+                                        <li class="nav-item text-white py-2">
+                                            <span class="h5 py-2 px-md-2">For Movers</span>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="Helper-sign-up" class="nav-link for-movers-links ps-4 ps-lg-2" href="{% url 'sign-up' %}">Join the Network</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="Helper-login" class="nav-link for-movers-links ps-4 ps-lg-2" href="{% url 'login' %}">Helper Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="Mover-software" class="nav-link for-movers-links ps-4 ps-lg-2" href="#">Mover Software</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="Movers-blog" class="nav-link for-movers-links ps-4 ps-lg-2" href="#">Movers Blog</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="Movers-academy" class="nav-link for-movers-links ps-4 ps-lg-2" href="{% url 'movers-academy' %}">Movers Academy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg">
+                                    <ul class="nav flex-column mb-0">
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="Moving101" class="nav-link" href="#">
+                                                <span class="h5 text-white d-none d-lg-inline-block">
+                                                    Moving 101
+                                                </span>
+                                                <span class="text-white py-2 d-lg-none">
+                                                    Moving 101
+                                                    <i class="far fa-chevron-right float-end py-1 d-lg-none"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="Blog" class="nav-link" href="#">
+                                                <span class="h5 text-white d-none d-lg-inline-block">
+                                                    Moving Advice Blog
+                                                </span>
+                                                <span class="text-white py-2 d-lg-none">
+                                                    Moving Advice Blog
+                                                    <i class="far fa-chevron-right float-end py-1 d-lg-none"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="Affiliate-sign-up" class="nav-link" href="#">
+                                                <span class="h5 text-white d-none d-lg-inline-block">
+                                                    Become an Affiliate
+                                                </span>
+                                                <span class="text-white py-2 d-lg-none">
+                                                    Become an Affiliate
+                                                    <i class="far fa-chevron-right float-end py-1 d-lg-none"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="Moving-statistics" class="nav-link" href="#">
+                                                <span class="h5 text-white d-none d-lg-inline-block">
+                                                    Moving Statistics
+                                                </span>
+                                                <span class="text-white py-2 d-lg-none">
+                                                    Moving Statistics
+                                                    <i class="far fa-chevron-right float-end py-1 d-lg-none"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a data-gacat="HAH.com-Global-Nav" data-gaact="More-Click" data-galbl="Migration-report" class="nav-link" href="#">
+                                                <span class="h5 text-white d-none d-lg-inline-block">
+                                                    Migration Report
+                                                </span>
+                                                <span class="text-white py-2 d-lg-none">
+                                                    Migration Report
+                                                    <i class="far fa-chevron-right float-end py-1 d-lg-none"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <span class="navbar-text p-0 d-block border-bottom border-lg-0">
+                <a data-gacat="HAH.com-Global-Nav" data-gaact="HowItWorks-Click" data-galbl="How-it-works" class="nav-link text-base pt-4 pb-3 fw-bold px-3" href="{% url 'how-it-works' %}">How It Works</a>
+            </span>
+            <span class="navbar-text p-0 d-block border-bottom border-lg-0">
+                <a data-gacat="HAH.com-Global-Nav" data-gaact="MyMove-Click" data-galbl="MyMove" href="{% url 'my-move' %}" class="nav-link text-base pt-4 pb-3 fw-bold px-3" aria-expanded="false">My Move</a>
+            </span>
+            <div class="nav navbar-nav d-md-none bg-base-light-70">
+                <div class="text-base px-3 py-4">
+                        <a data-gacat="HAH.com-Global-Nav" data-gaact="SuperNav-Click" data-galbl="Call-us-mobile" href="#" class="nav-link">Call Us (000) 000-0000</a>
+                    <a data-gacat="HAH.com-Global-Nav" data-gaact="SuperNav-Click" data-galbl="Were-available-mobile" href="{% url 'contact' %}" class="nav-link text-primary">We're available 7 days a week</a>
+                    <a data-gacat="HAH.com-Global-Nav" data-gaact="SuperNav-Click" data-galbl="Contact-mobile" href="{% url 'contact' %}" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

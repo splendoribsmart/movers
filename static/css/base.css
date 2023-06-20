@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.head1 {
+    background: #ff6600;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.head1-box {
+    margin: 10px;
+    flex: 50%;
+    /* border: 1px solid black; */
+}
+
+#head-link {
+    float: right;
+    text-align: right;
+}
+#my-logo{
+    width: 50px;
+    display: inline;
+}
+
+#logo-link{
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+
+
+#co-name {
+    display: inline-block;
+}

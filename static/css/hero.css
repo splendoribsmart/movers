@@ -1,0 +1,13 @@
+.hero {
+    background-image: url('../images/high2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    position: relative;
+    height: 80vh;
+    background-position: center;
+}
+
+.wrapper {
+    background: #ff6600;
+}

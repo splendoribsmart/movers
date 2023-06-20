@@ -1,0 +1,82 @@
+{% load static %}
+
+<!-- <style>
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    position: relative;
+    height: 60vh;
+    background-position: center;
+}
+</style> -->
+
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="wrapper p-4 m-5">
+                    <div>
+                        <h1>Local movers you can trust.</h1>
+                        <p>Find local movers on Moving with status unlimites to load and unload your rental truck or storage container (or hire moving companies with a truck)..</p>
+                        <a class="btn btn-outline-dark">Get Started</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="wrapper bg-light p-4 m-5 shadow">
+                    <div class="mb-4">
+                        <h3 class="mb-0">Tell us about your move</h3>
+                        <p>When and where are you moving?</p>
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                          <input type="text" class="form-control" id="loadingZipCodeInput" placeholder="Loading Zip Code">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="unloadingZipCodeInput" placeholder="Unloading Zip Code">
+                        </div>
+                        <!-- <input class="form-control" list="datalistOptions" id="includeTruckSize" placeholder="Include Truck Size">
+                        <datalist id="datalistOptions">
+                        <option value="San Francisco">
+                        <option value="New York">
+                        <option value="Seattle">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                        </datalist> -->
+                        <div class="mb-3">
+                            <input type="date" class="form-control" id="loadingDate" placeholder="Loading Date">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="date" class="form-control" id="unloadingDate" placeholder="Unloading Date">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <input class="form-control" list="datalistOptions" id="includeTruckSize" placeholder="Include Truck Size">
+                            <datalist id="datalistOptions">
+                            <optiont value="No truck, I will bring my own">
+                            <option value="Small truck (10'-'13')">
+                            <option value="Medium truck (14'-'19')">
+                            <option value="Large truck (20'-'26')">
+                            <option value="Extral large truck (28')">
+                            <option value="No truck, I will bring my own">
+                            </datalist>
+                        </div>
+                        <div class="d-grid mb-3">
+                            <button type="submit" class="btn btn-outline-dark">Compare Mover Price</button>
+                        </div>
+                        <div class="mb-2">
+                            <a href="#">Need help choosing a truck?</a>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="display: static; height: 200px;" class="bg-dark">
+
+</div>

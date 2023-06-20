@@ -1,0 +1,239 @@
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.my-navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.my-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.my-dropdown .my-dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.my-navbar a:hover, .my-dropdown:hover .my-dropbtn {
+  background-color: #444444;
+}
+
+.my-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444444;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.my-dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+.my-dropdown:hover .my-dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.my-column {
+  float: left;
+  /* width: 33.33%; */
+  padding: 20px;
+  margin-right: 60px;
+  height: auto;
+  color: white;
+}
+
+.my-column h3 {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my-column a {
+  float: none;
+  color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.my-column a:hover {
+  color: #ddd;
+}
+
+/* Clear floats after the columns */
+.my-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .my-column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* #menu-img {
+  width: 200px;
+  display: inline;
+  float: right;
+}
+
+img {
+  width: 100%;
+} */
+</style>
+
+<div class="my-navbar">
+    <a href="#my-home">Home</a>
+    <div class="my-dropdown">
+      <button class="my-dropbtn">Book
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="my-dropdown-content">
+        <div class="my-row">
+          <div class="my-column">
+            <h3>Move Help</h3>
+            <a href="#">Packing</a>
+            <a href="#">Loading</a>
+            <a href="#">Unloading</a>
+            <a href="#">Furniture</a>
+          </div>
+          <div class="my-column">
+            <h3>Movers</h3>
+            <a href="#">Moving Companies</a>
+            <a href="#">Long Distance Moving Companies</a>
+          </div>
+          <div class="my-column">
+            <h3>Rental Truck</h3>
+            <a href="#">Rental Truck</a>
+            <a href="#">Moving Containers</a>
+            <a href="#">Semi-Freight Trailer</a>
+          </div>
+          <div class="my-column">
+            <h3>Why Book with <br> HireAHelper?</h3>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-dropdown">
+        <button class="my-dropbtn">Plan
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="my-dropdown-content">
+          <div class="my-row">
+            <div class="my-column">
+              <h3>Moving Costs</h3>
+              <a href="#">Cost Calculator</a>
+              <a href="#">Moving Options</a>
+              <a href="#">Packing Supplies</a>
+              <a href="#">Moving Containers</a>
+              <a href="#">Moving Trucks</a>
+              <a href="#">Hybrid Move Cost Savings</a>
+              <a href="#">How Much Does It Cost to <br>Rent a U-Haul?s</a>
+            </div>
+            <div class="my-column">
+              <h3>Moving Guides</h3>
+              <a href="#">Moving Checklist</a>
+              <a href="#">Loading & Unloading</a>
+              <a href="#">Pets & Kids</a>
+              <a href="#">Long Distance Moving</a>
+              <a href="#">Planning & Organizing</a>
+              <a href="#">Moving Insurance</a>
+            </div>
+            <div class="my-column">
+              <h3>Moving Journeys</h3>
+              <a href="#">Military Move</a>
+              <a href="#">Office Movers</a>
+              <a href="#">Corporate Relocation</a>   
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-dropdown">
+        <button class="my-dropbtn">Cities
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="my-dropdown-content">
+          <div class="my-row">
+            <div class="my-column">
+              <h3>Movers Near Me</h3>
+              <br>
+              <p>No, Seriously. We've Got Movers in <br>All 50 States.</p>
+              <br>
+              <a href="#" style="float: right;">See All Cities</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-dropdown">
+        <button class="my-dropbtn">More
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="my-dropdown-content">
+          <div class="my-row">
+            <div class="my-column">
+              <h3>Help & Support</h3>
+              <a href="#">FAQ</a>
+              <a href="#">Moving Day</a>
+              <a href="#">Contact Us</a>
+              <a href="#">About Us</a>
+            </div>
+            <div class="my-column">
+              <h3>For Movers</h3>
+              <a href="#">Join the Network</a>
+              <a href="#">Helper Login</a>
+              <a href="#">Mover Software</a>
+              <a href="#">Movers Blog</a>
+              <a href="#">Movers Academy</a>
+            </div>
+            <div class="my-column">
+              <h3>Moving 101</h3>
+              <a href="#">Moving Advice Blog</a>
+              <a href="#">Become an Affiliate</a>
+              <a href="#">Moving Statistics</a>
+              <a href="#">Migration Report</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
